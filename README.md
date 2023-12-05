@@ -46,6 +46,7 @@ window dimension by +1 in the pointed direction.
 `:join-pane -s 2 -t 1` merge window 2 to window 1 as panes
 `:join-pane -s 2.1 -t 1.0` move pane 1 from window 2 to window 1 pane 
 afer 0.
+
 `:break-pane` will transform panes into windows.
 
 ## Copy mode
