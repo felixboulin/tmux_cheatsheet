@@ -1,4 +1,4 @@
-# A summary of basic commands to navigate sessions and windows with tmux.
+# Basic commands to navigate sessions and windows with tmux.
 
 Note: `C-a` refers to control + leader key as defined within tmux
 assuming leader is set to 'a'.
