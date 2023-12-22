@@ -3,9 +3,9 @@
 Note: `C-a` refers to control + leader key as defined within tmux
 assuming leader is set to 'a'.
 ## Sessions
-Initiate a new session named 'mysession' with `tmux new -s mysession`.
+Initiate a new session named '<session>' with `tmux new -s <session>`.
 
-To kill it, run `tmux kill-ses -t mysession`.
+To kill it, run `tmux kill-ses -t <session>`.
 
 List all sessions with `tmux ls` and attach to mysession  with 
 `tmux a -t mysession`.
@@ -14,7 +14,7 @@ Attach to the last session with `tmux a`.
 Tigger Window Preview with `C-a+w`, and move between sessions with `C-a+(` and `C-a+)`.
 
 ## Windows
-Add mywindow to the session initiation: `tmux new -s mysession -n mywindow`
+Add <window> to the session initiation: `tmux new -s <session> -n <window>`
 
 Create a new window with `C-a+c` and rename the current window with `C-a+,`.
 To close it, hit `C-a+&`.
@@ -25,6 +25,11 @@ the corresponding window number, and `C_a+l` to toggle last window.
 `:swap-window -t -1` will move the current window by one place to the left. 
 
 `:swap-window -s 2 -t 1` will swap windows number 2(src) and 1(dst).
+
+#### between sessions
+`:move-window -s <session>:<index>` will move the window from the session 
+specified at given index into the active session.
+Shortcut: `<session_name>:<window_index>`
 
 ## Panes
 `:split-window -h` or `C-a+%` will split the current window into two horizontal 
@@ -52,5 +57,9 @@ afer 0.
 `:break-pane` will transform panes into windows.
 
 ## Copy mode
-Pres `C-a+[` to enter copy mode. Vim like motions with `<space>` to start 
+Press `C-a+[` to enter copy mode. Vim like motions with `<space>` to start 
 selection and `return` to copy.
+
+## Other
+`C-a+:<commands>` to enter tmux commands
+
