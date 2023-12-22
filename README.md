@@ -27,9 +27,8 @@ the corresponding window number, and `C_a+l` to toggle last window.
 `:swap-window -s 2 -t 1` will swap windows number 2(src) and 1(dst).
 
 #### between sessions
-`:move-window -s <session>:<index>` will move the window from the session 
-specified at given index into the active session.
-Shortcut: `<session_name>:<window_index>`
+`:move-window -s <session>:<index or name>` will move the window from the session 
+specified at given index or name into the active session.
 
 ## Panes
 `:split-window -h` or `C-a+%` will split the current window into two horizontal 
